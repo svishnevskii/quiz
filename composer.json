@@ -1,0 +1,24 @@
+{
+    "name": "packages/tests",
+    "description": "Tests",
+    "homepage": "https://github.com/svishnevskii/quiz.git",
+    "type": "module",
+
+    "require": {
+        "php": "^7.2.5",
+        "laravel/framework": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Components\\Tests\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Components\\Tests\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
+}
